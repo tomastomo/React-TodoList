@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin-top: 1rem;
+}
+li > label {
+    cursor: pointer;
+}
+ul {
+    padding: 0 !important;
+    list-style: none;
+}
+ul>.list-group-item {
+    border: none;
+}
