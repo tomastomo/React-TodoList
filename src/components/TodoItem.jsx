@@ -2,15 +2,16 @@ import React from 'react'
 import { useState } from 'react';
 
 export function TodoItem({ todo, toggleTodo }) {
-    const { id, task, completed } = todo;
+    const { id, task, /*completed*/ } = todo;
     const [isCompleted, setIsCompleted] = useState(false);
 
-    const handleTodoClick = () => {
+    /*const handleTodoClick = () => {
         toggleTodo(id);
-    }
+    }*/
 
     const markAsDone = () => {
         setIsCompleted(!isCompleted)
+        toggleTodo(id);
     };
 
     return (

@@ -15,3 +15,12 @@ ul {
 ul>.list-group-item {
     border: none;
 }
+.bordersNone {
+    border:none !important;
+}
+.buttonShadow:focus {
+    box-shadow: none !important;
+}
+.padding05 {
+    padding: 0.5rem 0rem !important;
+}

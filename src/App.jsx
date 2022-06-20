@@ -54,14 +54,15 @@ export function App() {
                         <TodoList todos={todos} toggleTodo={toggleTodo} />
                         <InputGroup className="mb-3" >
                             <FormControl
+                                className='bordersNone padding05 buttonShadow'
                                 placeholder="New Task"
                                 ref={todoTaskRef}
                             />
                         </InputGroup>
                     </Col>
                 </Row>
-                <Button variant="outline-success" className='me-3' onClick={handleTodoAdd}>Add</Button>
-                <Button variant="outline-danger" onClick={handleClearCompleted}>Delete</Button>
+                <Button variant="outline-success" className='me-3 buttonShadow' onClick={handleTodoAdd}>Add</Button>
+                <Button variant="outline-danger" className='buttonShadow' onClick={handleClearCompleted}>Delete</Button>
             </Container>
         </>
     )
